@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recriando Wikipedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: grey;
+    color: #fff;
+    padding-top: 10px;
+    min-height: 50px;
+    border-bottom: #77c7c5 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header h1 {
+    float: left;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px 0;
+}
+
+#articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+#articles article {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+footer {
+    background: rgb(104, 69, 69);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea, form button {
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #77c7c5;
+}
+
+        h2 {
+            text-align: center;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            width: 150px;
+            margin: 10px;
+            text-align: center;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>
+            <img src="	https://pt.m.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-fr.svg
+               " alt="logowikipedia"    width="200" height="200"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#articles">Artigos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Bem-vindo à Wikipedia</h2>
+               
+                <p> Uma enciclopédia livre e de fácil acesso para todos.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>A Wikipedia é um projeto de enciclopédia colaborativa, universal e multilíngue estabelecido na internet sob o princípio wiki.</p>
+            </div>
+        </section><label role="button" for="main-menu-input" id="mw-mf-main-menu-button" aria-hidden="true" data-event-name="ui.mainmenu" class="cdx-button cdx-button--size-large cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--icon-only cdx-button--weight-quiet toggle-list__toggle">
+            <span class="minerva-icon minerva-icon--menu-base20"></span>
+        <span></span>
+        </label>
+        <div>
+            <nav>
+
+            </nav>
+        </div>
+
+        <section id="articles">
+            <div class="container">
+                <h2>Artigos em Destaque</h2>
+                <article>
+                    <h3>História da Internet</h3>
+                    <h4>A internet é o principal meio de comunicação do mundo, com mais de 5 bilhões de usuários. Surgiu na década de 1960 por meio da Arpanet, rede criada com fins militares."teve início com a Arpanet, uma rede de troca de informações que havia sido desenvolvida para conectar instalações de pesquisas e militares com o Pentágono, nos Estados Unidos, na década de 1960. O crescimento dessa rede permitiu que seu uso se estendesse para fins privados e comerciais. A internet chegou ao Brasil somente no final da década de 1980.
+
+                        A internet é atualmente o maior meio de comunicação utilizado planeta, com mais de 5 bilhões de usuários. Por ela, é possível enviar mensagens instantaneamente, movimentar dinheiro em contas bancárias, comprar mercadorias, acessar redes sociais, fazer pesquisas etc.
+                        
+                        A internet chegou ao Brasil, em 1988, por meio de uma conexão entre um computador da Universidade Federal do Rio de Janeiro (UFRJ) e a rede da Universidade de Maryland, nos Estados Unidos, tornando-se pública e comercial entre 1994 e 1995. Atualmente, de acordo com a Pnad, cerca de 90% das residências brasileiras têm acesso à internet."
+                        
+                        Veja mais sobre "História da internet" em: <link rel="https://brasilescola.uol.com.br/informatica/internet.htm" href="Brasil Escola"></h4>
+                    <p>A internet surgiu a partir de uma necessidade militar nos anos 60...</p>
+                    <a href="#">Leia mais</a>
+                </article>
+                <article>
+                    <h3>Teoria da Relatividade</h3>
+                    <p>Desenvolvida por Albert Einstein no início do século XX...</p>
+                    <a href="#">Leia mais</a>
+                </article>
+            </div>
+        </section>
+        <div class="container">
+            <h2>PROJETOS-IRMÃOS</h2>
+            <p>A Wikipédia existe graças à <a href="https://wikimediafoundation.org/">Fundação Wikimedia</a>, entidade sem fins lucrativos que gere projetos em diversos idiomas e de <a href="https://pt.wikipedia.org/wiki/Conte%C3%BAdo_livre">conteúdo livre</a>:</p>
+            <div class="projects">
+                <div class="project">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Commons-logo.svg" alt="Commons">
+                    <p><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a><br>Repositório de mídia livre</p>
+                </div>
+                <div class="project">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Wiktionary-logo.svg" alt="Wikcionário">
+                    <p><a href="https://www.wiktionary.org/">Wikcionário</a><br>Dicionário universal livre</p>
+                </div>
+                <div class="project">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Wikinews-logo.svg" alt="Wikinotícias">
+                    <p><a href="https://www.wikinews.org/">Wikinotícias</a><br>Jornalismo colaborativo</p>
+                </div>
+                <!-- Adicione mais projetos conforme necessário -->
+            </div>
+            <footer>
+                <p><a href="#">Imprensa</a> • <a href="#">Estatísticas</a></p>
+            </footer>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wikipedia Modernizada. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
